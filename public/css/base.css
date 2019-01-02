@@ -1,0 +1,48 @@
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: #fff;
+}
+
+.yt_navbar{
+    background-color: #00c8c8;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color:#fff;
+}
+
+.navbar-default .navbar-brand{
+    color:#fff;
+}
+
+.type_nav{
+    height: 90px;
+    line-height: 90px;
+}
+
+.type_nav li{
+    float: left;
+    margin:0 15px;
+    padding-left:30px;
+    background: url("/images/icon.jpg") no-repeat left center;
+}
+
+/*场馆列表页*/
+.venue_list .venue_item {
+    padding:30px 0;
+    border-bottom:1px #ccc solid;
+    display: flex;
+}
+
+.venue_list .venue_item .pic{
+    width:330px;
+}
+.venue_list .venue_item .txt{
+    width:700px;
+    margin-left: 20px;
+}
+
