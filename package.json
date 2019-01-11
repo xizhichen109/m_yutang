@@ -17,5 +17,10 @@
         "laravel-mix": "^1.0",
         "lodash": "^4.17.4",
         "vue": "^2.5.7"
+    },
+    "dependencies": {
+        "mint-ui": "^2.2.13",
+        "vee-validate": "^2.1.5",
+        "vue-router": "^3.0.2"
     }
 }

@@ -3,6 +3,7 @@
 @section('content')
     <div class="container venue_list">
         <div class="row">
+
             <ul class="type_nav">
                 @foreach($types as $type)
                 <li><a href="/venue/type/{{$type->id}}">{{$type->name}}</a> </li>
@@ -17,9 +18,15 @@
                     <div class="venue_item">
                         <div class="pic"><img src="/images/venue_icon.jpg" class="img-responsive img-rounded"></div>
                         <div class="txt">
-                            <h3>{{$venue->name}}</h3>
+                            <h3><a href="/venue/detail/{{$venue->id}}">{{$venue->name}}</a></h3>
                             <p>{{$venue->des}}</p>
-                            <p>{{$venue->created_at}} 关注</p>
+                            <p>{{$venue->created_at}} &nbsp; &nbsp;
+                            @if($venue->isfollowed())
+                                <a href="/venue/unfollow/{{$venue->id}}" > 取消关注</a>
+                            @else
+                                <a href="/venue/follow/{{$venue->id}}" > 关注</a>
+                            @endif
+                            </p>
                         </div>
                     </div>
 

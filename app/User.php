@@ -37,5 +37,12 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    // User.php   Venue.php  多对多
+
+    public function venues(){
+        return $this->belongsToMany('App\Venue');
+    }
+
+
 
 }

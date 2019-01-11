@@ -1,5 +1,11 @@
 ul{
     list-style: none;
+    padding:0;
+}
+
+ul,ol,dl,dd,dt,li,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -46,3 +52,269 @@ body{
     margin-left: 20px;
 }
 
+
+/*创建场馆*/
+.pt20{
+    padding-top: 20px;
+}
+
+.venue_create{
+    padding-top: 20px;
+}
+
+.venue_create .panel-default>.panel-heading{
+    background-color: #e3e3e3;
+}
+
+
+.set_icon .panel-body{
+    height: 350px;
+}
+
+.set_icon .user_icon{
+    width:80px;
+    height: 80px;
+}
+
+.my_icon{
+    padding-top: 5px;
+}
+
+.navbar-nav > .my_icon > a{
+    padding:0;
+}
+
+.my_icon img{
+    width:40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*我的关注*/
+.venue_my_follows .venue_item {
+    padding:30px 0;
+    border-bottom:1px #ccc solid;
+    display: flex;
+}
+
+.venue_my_follows .venue_item .pic{
+    width:330px;
+}
+
+.venue_my_follows .venue_item .txt{
+    width:700px;
+    margin-left: 20px;
+}
+
+/*场馆价格*/
+
+.venue_price .my_price{
+    width:500px;
+}
+
+/*场馆详情*/
+
+.venue_detail .order_wrap{
+    padding-top: 30px;
+}
+
+.venue_detail .venue_title{
+    margin-top:10px;
+}
+
+.venue_detail .order_header{
+    height: 58px;
+    padding-top:2px;
+    padding-left:10px;
+    background-color: #00c8c8;
+    color:#fff;
+}
+
+.venue_detail .order_header dl{
+    float: left;
+    padding:0 15px;
+    text-align: center;
+    height: 58px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.venue_detail .order_header dt{
+    line-height: 30px;
+}
+
+.venue_detail .order_header dd{
+    line-height: 20px;
+}
+
+
+.order_header dl.active{
+    background-color: #fff;
+    color: #00c8c8;
+}
+
+.venue_detail .order_body{
+    height: 525px;
+}
+
+.venue_detail .day_list{
+    font-size: 14px;
+    display: none;
+}
+
+.venue_detail .show{
+    display: block;
+}
+
+
+.venue_detail .day_list{
+    border-top:1px #b4b4b4 solid;
+}
+
+.venue_detail .day_list dl{
+    height: 35px;
+    border:1px #b4b4b4 solid;
+    border-top:none;
+    margin-bottom: 0;
+}
+
+.venue_detail .day_list dt{
+    float: left;
+    width:130px;
+    height: 35px;
+    background-color: #e4e4e4;
+    text-align: center;
+    line-height: 35px;
+}
+
+.venue_detail .day_list dd{
+    float: left;
+    width:700px;
+    height: 35px;
+}
+
+.venue_detail .day_list li{
+    float: left;
+    width:50px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-right: 1px #b4b4b4 dashed;
+    cursor: pointer;
+}
+.venue_detail .day_list li.ordered{
+    background-color:#999;
+}
+.venue_detail .day_list li.selected{
+    background-color: #00c8c8;
+}
+
+.venue_detail .order_detail{
+    border: 1px #e8e8e8 solid;
+    height: 460px;
+    border-radius: 2px;
+    padding: 10px;
+    position: relative;
+}
+
+.venue_detail .order_detail p{
+    font-size: 16px;
+}
+
+.venue_detail .detail_wrap .item{
+    width:88px;
+    height: 48px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border:1px #d6d6d6 solid;
+    font-size: 12px;
+    float: left;
+    margin: 15px;
+    margin-bottom: 0;
+}
+
+.venue_detail .item dt{
+    height: 24px;
+    background-color: #00c8c8;
+    color:#fff;
+    text-align: center;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.venue_detail .item dd{
+    height: 24px;
+    color:#01c7c8;
+    text-align: center;
+    line-height: 24px;
+}
+
+.venue_detail .item_template{
+    display: none;
+}
+
+.venue_detail .time_list{
+    height: 41px;
+}
+
+.venue_detail .time_list dl{
+    height: 39px;
+}
+
+.venue_detail .time_list dt{
+    float: left;
+    width:130px;
+    height: 39px;
+}
+.venue_detail .time_list dd{
+    float: left;
+    height: 39px;
+}
+
+.venue_detail .time_list li{
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    width:50px;
+}
+
+.venue_detail .btn_wrap{
+    width:100%;
+    height: 48px;
+    position: absolute;
+    left:0;
+    bottom: 15px;
+
+}
+.venue_detail  .btn_wrap span{
+    color:#fe8405;
+    font-size:18px;
+    padding:0 10px;
+    padding-left:15px;
+}
+
+.venue_detail  .btn_wrap button{
+    background-color: #ff8402;
+    color: #fff;
+    width:120px;
+    height: 40px;
+    border:none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+
+.venue_detail  .btn_wrap button:focus{
+    outline: none;
+}
+
+
+.venue_detail .order_detail .order_date{
+    color:#ff8402;
+}

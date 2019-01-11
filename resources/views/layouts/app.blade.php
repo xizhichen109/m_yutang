@@ -30,7 +30,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('/venue/list') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
@@ -38,7 +38,7 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li><a href="#">订场</a> </li> &nbsp;
+                        <li><a href="/venue/list">订场</a> </li>
                         <li><a href="#">活动</a> </li>
                     </ul>
                     <form class="navbar-form navbar-left">
@@ -55,12 +55,18 @@
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
+                            <li class="my_icon"><a href="#"><img src="/upload/{{Auth::user()->icon}}"></a> </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu">
+                                    <li><a href="/venue/create">创建场馆</a> </li>
+                                    <li><a href="/venue/my_venues">我的场馆</a> </li>
+                                    <li><a href="/venue/my_follows">我的关注</a> </li>
+                                    <li><a href="/user/set_icon">头像设置</a> </li>
+                                    <li><a href="#">重置密码</a> </li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
@@ -85,5 +91,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/base.js') }}"></script>
 </body>
 </html>
